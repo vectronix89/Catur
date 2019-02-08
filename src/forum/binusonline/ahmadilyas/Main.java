@@ -165,7 +165,7 @@ public class Main {
             int nCol = components[2].charAt(0) - 97;
             int nRow = Math.abs(components[2].charAt(1) - 49-7);
 
-            System.out.println(col+ " " + row + " " + nCol + " " + nRow);
+            System.out.println("Perpindahan " + col+ " " + row + " " + nCol + " " + nRow);
             if (isValid(chessboard, row, col, nRow, nCol)){
                 chessboard[nRow][+nCol] = chessboard[row][+col];
                 chessboard[row][+col] = Chessmen.EMPTY;
@@ -298,6 +298,8 @@ public class Main {
                     break;
                 case 3:
                     System.out.println ("Terima Kasih");
+                    scan.close();
+                    System.exit(1);
                     break;
 
             }
@@ -315,19 +317,19 @@ public class Main {
 
         while(true){
             printPapanCatur(chessboard);
+            printInputanCatur();
             move = sc.nextLine();
 
-            if (move.equals("exit")){
-                sc.close();
-                System.exit(1);
+            if (move.equals("menu")){
+                return;
             }
 
             move(chessboard, move);
-            printInputanCatur();
+            System.out.println("");
         }
     }
 
     public static void printInputanCatur() {
-        System.out.println("Masukkan pola standar permainan catur, contoh: “e1 ke e5”:\n");
+        System.out.println("\nMasukkan pola standar permainan catur, contoh: “e1 ke e5”:");
     }
 }
