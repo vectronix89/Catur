@@ -73,11 +73,6 @@ public class Main {
 
     }
 
-    /***
-     * Prints chessboard to the console
-     *
-     * @param chessboard
-     */
     public static void printPapanCatur(Chessmen[][] chessboard) {
         char a = 'a';
         System.out.print(" ");
@@ -285,7 +280,7 @@ public class Main {
 
             switch (index){
                 case 1:
-                    System.out.println("\nTugas Kelompok 2 Kelas DMBA");
+                    System.out.println("\nTugas Kelompok Final Team 3 Kelas DMBA");
                     System.out.println("\nAnggota:");
                     System.out.println("\n• 2201833303 - Ahmad Ilyas");
                     System.out.println("\n• 2201849195 - Primananda Adytya");
