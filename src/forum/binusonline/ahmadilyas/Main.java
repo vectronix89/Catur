@@ -77,7 +77,7 @@ public class Main {
         char a = 'a';
         System.out.print(" ");
         for (int l = 0; l < 8; l++) {
-            System.out.print(String.format("%3s", a));
+            System.out.print(String.format("\t %s\t", a));
             a++;
         }
         System.out.println("\r");
@@ -90,43 +90,43 @@ public class Main {
                 switch (chessboard[i][j]) {
 
                     case BLACK_PAWN:
-                        System.out.print("\u265F ");
+                        System.out.print("\t \u265F\t");
                         break;
                     case BLACK_ROOK:
-                        System.out.print("\u265C ");
+                        System.out.print("\t \u265C\t");
                         break;
                     case BLACK_KNIGHT:
-                        System.out.print("\u265E ");
+                        System.out.print("\t \u265E\t");
                         break;
                     case BLACK_BISHOP:
-                        System.out.print("\u265D ");
+                        System.out.print("\t \u265D\t");
                         break;
                     case BLACK_QUEEN:
-                        System.out.print("\u265B ");
+                        System.out.print("\t \u265B\t");
                         break;
                     case BLACK_KING:
-                        System.out.print("\u265A ");
+                        System.out.print("\t \u265A\t");
                         break;
                     case WHITE_PAWN:
-                        System.out.print("\u2659 ");
+                        System.out.print("\t \u2659\t");
                         break;
                     case WHITE_ROOK:
-                        System.out.print("\u2656 ");
+                        System.out.print("\t \u2656\t");
                         break;
                     case WHITE_KNIGHT:
-                        System.out.print("\u2658 ");
+                        System.out.print("\t \u2658\t");
                         break;
                     case WHITE_BISHOP:
-                        System.out.print("\u2657 ");
+                        System.out.print("\t \u2657\t");
                         break;
                     case WHITE_QUEEN:
-                        System.out.print("\u2655 ");
+                        System.out.print("\t \u2655 \t");
                         break;
                     case WHITE_KING:
-                        System.out.print("\u2654 ");
+                        System.out.print("\t \u2654 \t");
                         break;
                     case EMPTY:
-                        System.out.print(" ");
+                        System.out.print("\t \t");
                         break;
                 }
             }
