@@ -269,11 +269,12 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int awal, akhir;
         int index = 0;
-        while (index != 3){
+        while (index != 4){
             System.out.print ("\nMenu hari ini:\n"
                     + "1. Tentang Program\n"
                     + "2. Permainan Catur\n"
-                    + "3. Keluar\n"
+                    + "3. Cara Menggerakkan Buah Catur \n"
+                    + "4. Keluar\n"
                     + "Masukan Pilihan Anda: ");
 
             index  = scan.nextInt();
@@ -292,6 +293,17 @@ public class Main {
                     gameCatur();
                     break;
                 case 3:
+                    System.out.println("\n Cara Menggerakkan Buah Catur \n" +
+                            "\n" +
+                            "\u265F \u2659 Bidak (Pion)\t: Langkahnya bergerak satu  atau dua kotak langkah ke depan baik itu buah putih maupun buah hitam, bilamana berhadapan diagonal dengan buah lawan, bidak bisa memakan buah pemain lawan dan mampu bergerak kea rah kiri atau kanan.\n" +
+                            "\u265A \u2654 Raja (King)\t: Raja mempunyai satu langkah ke segala arah, baik itu arah ke depan, belakang, ke kiri, ke kanan maupun diagonal. \n" +
+                            "\u265B \u2655 Ratu / Menteri (Queen)\t: Ratu bergerak ke arah yang “bebas”, bisa bergerak secara diagonal  satu petak maupun beberapa petak asalkan tidak ada buah sendiri atau buah lawan yang menghalangi, dan juga bisa bergerak ke depan, ke belakang, ke kanan maupun ke kiri.\n" +
+                            "\u265C \u2656 Benteng (Rook)\t: Benteng bergerak vertikal dan horizontal yaitu bergerak kearah yang lurus satu langkah atau beberapa langkah, ke depan, ke belakang ataupun ke samping. Dan juga tidak ada buah lain yang menghalangi.\n" +
+                            "\u265D \u2657 Gajah (Bishop)\t: Bergerak secara diagonal satu petak atau beberapa petak di sebuah papan catur. Dan tidak ada buah lain yang menghalanginya.\n" +
+                            "\u265E \u2658 Kuda (Knight)\t: Kuda mempunyai langkah yang menarik, yaitu melangkah seperti garis L, artinya bergerak maju dua petak lurus kemudian satu petak ke kiri atau ke kanan. Kuda berbeda dengan buah catur yang lainnya karena bisa “melangkahi” beberapa buah catur.\n" +
+                            "\n");
+                    break;
+                case 4:
                     System.out.println ("Terima Kasih");
                     scan.close();
                     System.exit(1);
