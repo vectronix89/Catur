@@ -283,11 +283,11 @@ public class Main {
                 case 1:
                     System.out.println("\nTugas Kelompok Final Team 3 Kelas DMBA");
                     System.out.println("\nAnggota:");
-                    System.out.println("\n• 2201833303 - Ahmad Ilyas");
-                    System.out.println("\n• 2201849195 - Primananda Adytya");
-                    System.out.println("\n• 2201848936 - Mochammad Yusuf");
-                    System.out.println("\n• 2201847271 - Tsania Hanintisya");
-                    System.out.println("\n• 2201849005 - KGS. Muhammad Chaidir Halim");
+                    System.out.println("• 2201833303 - Ahmad Ilyas");
+                    System.out.println("• 2201849195 - Primananda Adytya");
+                    System.out.println("• 2201848936 - Mochammad Yusuf");
+                    System.out.println("• 2201847271 - Tsania Hanintisya");
+                    System.out.println("• 2201849005 - KGS. Muhammad Chaidir Halim");
                     break;
                 case 2:
                     gameCatur();
